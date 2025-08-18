@@ -42,6 +42,12 @@
         </button>
     </div>
 
+     <!-- Botão de Download Recomendacao Nutricionista -->
+    <div class="container mx-auto px-6 py-6 text-center">
+        <button id="ebook-download-button" onclick="downloadRecomendacao()" class="bg-purple-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-lg shadow-lg">
+            Baixar Recomendação Nutricionista
+        </button>
+    </div>
 
     <!-- Conteúdo Principal -->
     <main class="container mx-auto px-6 py-12">
@@ -436,6 +442,14 @@
 
             // Abre o link em uma nova aba do navegador
             window.open(ebookUrl, '_blank');
+        }
+
+        function downloadRecomendacao() {
+            // Define o link do Google Drive para o E-book
+            const recomendacaoUrl = 'https://drive.google.com/file/d/1NLYf1OBgPuRj5PHSWK5DovBfLAzuXBhM/view?usp=sharing';
+
+            // Abre o link em uma nova aba do navegador
+            window.open(recomendacaoUrl, '_blank');
         }
     </script>
 
